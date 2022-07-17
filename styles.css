@@ -155,10 +155,10 @@ a:hover
 {
   color: white;
   font-family: Arial;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
   margin: auto;
 }
 
@@ -166,10 +166,9 @@ a:hover
 {
   color: white;
   font-family: Arial;
-  margin-right: 10px;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  margin-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
   margin: auto;
 }
 
@@ -178,10 +177,9 @@ a:hover
   color: white;
   font-family: Arial;
   font-style: italic;
-  margin-right: 10px;
-  margin-top: 0px;
-  margin-bottom: 5px;
-  margin-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
   margin: auto;
 }
 
