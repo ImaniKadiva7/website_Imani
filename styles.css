@@ -148,8 +148,7 @@ a:hover
 .Top-footer
 {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: auto;
 }
 
 .bottom-footer-paragraphs-1
