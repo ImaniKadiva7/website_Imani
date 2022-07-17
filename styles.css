@@ -132,48 +132,49 @@ a:hover
 {
   min-height: 50px;
   background-color: rgb(124, 124, 124);
-  margin-top: 3%;
+  margin-top: 2%;
   margin-left: 3%;
   margin-right: 3%;
   display: flex;
-  flex-direction: row;
-}
-
-.left-footer
-{
-  display: flex;
-  flex: 2;
   flex-direction: column;
 }
 
-.right-footer
+.bottom-footer
 {
   display: flex;
-  flex: 1;
-  align-items: center;
+  flex-direction: column;
 }
 
-.left-footer-paragraphs-1
+.Top-footer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-footer-paragraphs-1
 {
   color: white;
   font-family: Arial;
   margin-right: 10px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-left: 10px;
+  margin: auto;
 }
 
-.left-footer-paragraphs-2
+.bottom-footer-paragraphs-2
 {
   color: white;
   font-family: Arial;
   margin-right: 10px;
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-left: 10px;
+  margin: auto;
 }
 
-.left-footer-paragraphs-3
+.bottom-footer-paragraphs-3
 {
   color: white;
   font-family: Arial;
@@ -182,6 +183,7 @@ a:hover
   margin-top: 0px;
   margin-bottom: 5px;
   margin-left: 10px;
+  margin: auto;
 }
 
 @viewport
