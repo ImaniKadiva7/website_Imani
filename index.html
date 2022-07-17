@@ -76,30 +76,28 @@
       }
       .body-section
       {
-        min-height: 400px;
+        min-height: 300px;
         margin-top: 3%;
         background-color: rgb(124, 124, 124);
         margin-left: 3%;
         margin-right: 3%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
       }
-      .left-body
+      .top-body
       {
         display: flex;
         flex: 1;
         min-height: 300px;
-        margin-left: 30px;
-        margin-right: 10px;
         align-items: center;
       }
 
-      .right-body
+      .bottom-body
       {
         display: flex;
-        flex: 4;
-        min-height: 300px;
+        flex: 1;
+        min-height: 200px;
         margin-right: 10px;
         align-items: center;
       }
@@ -109,12 +107,19 @@
         height: 200px;
         border-radius: 100px;
         object-fit: scale-down;
+        margin-top: 10px;
+        margin-bottom: 0px;
       }
 
       p
       {
         color: white;
         font-family: Arial;
+      }
+
+      .paragraph-section
+      {
+        margin-top: 0px;
       }
 
       a
@@ -175,7 +180,7 @@
 
     <div class = "body-section">
       
-      <div class = "left-body">
+      <div class = "top-body">
 
         <div>
           <img src = "WhatsApp Image 2020-01-10 at 19.30.14.jpeg" class = "profile-pic">
@@ -183,8 +188,8 @@
 
       </div>
 
-      <div class = "right-body">
-        <div>
+      <div class = "bottom-body">
+        <div class = "paragraph-section">
           <p>Hi thank you for visiting my site.</p>
           <p>My name is Imani Kadiva and I'm a recent 
             MSc graduate in intelligent systems and robotics (2022).</p>
