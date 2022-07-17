@@ -8,10 +8,64 @@
     <style>
       .Header-section
       {
-        background-color: lightblue;
+        background-color: rgb(124, 124, 124);
         min-height: 50px;
         margin-right: 3%;
-        margin-left: 3%; 
+        margin-left: 3%;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .left-header
+      {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        color: white;
+        padding-left: 50px;
+        padding-right: 10px;
+        font-family: Arial;
+        font-style: italic;
+      }
+
+      .right-header
+      {
+        display: flex;
+        flex: 2;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .right-header a
+      {
+        color: black;
+        text-decoration: none;
+        font-family: Arial;
+        font-size: 15px;
+      }
+
+      .right-header a:hover
+      {
+        color: white;
+        transition: 0.8s;
+      }
+
+      .home-section
+      {
+        padding-left: 50px;
+        padding-right: 10px;
+      }
+      .about-section
+      {
+        padding-right: 10px;
+      }
+      .work-section
+      {
+        padding-right: 10px;
+      }
+      .contact-section
+      {
+        padding-right: 10px;
       }
 
       @viewport
@@ -30,8 +84,20 @@
 
   <body>
     <div class = "Header-section">
+
+      <div class = "left-header">
+        IMANI KADIVA
+      </div>
       
+      <div class = "right-header">
+        <a href = "home.html" class = "home-section" >Home</a>
+        <a href = "about.html"class = "about-section" >About</a>
+        <a href = "work.html" class = "work-section" >Work</a>
+        <a href = "contact.html" class = "contact-section" >Contact</a>
+      </div>
+
     </div>
+
   </body>
 
 </html>
