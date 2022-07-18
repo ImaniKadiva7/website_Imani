@@ -260,7 +260,7 @@ h2
 
 .work-body-section, .contact-body-section
 {
-  min-height: 400px;
+  height: 400px;
   margin-left: 3%;
   margin-right: 3%;
   margin-top: 3%;
