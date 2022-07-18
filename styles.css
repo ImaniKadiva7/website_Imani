@@ -258,6 +258,31 @@ h2
   margin-bottom: 5px;
 }
 
+.work-body-section, .contact-body-section
+{
+  min-height: 400px;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 3%;
+  background-color: #efefef;
+}
+
+.contact-body-section
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-paragraph1
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  font-family: Arial;
+  font-size: 18px;
+}
+
 @viewport
 {
   zoom: 1.0;
