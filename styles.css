@@ -108,6 +108,7 @@ p
 {
   color: black;
   font-family: Arial;
+  font-size: 14px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -181,6 +182,80 @@ a:hover
   padding-bottom: 10px;
   padding-left: 10px;
   margin: auto;
+}
+
+.about-body-section
+{
+  min-height: 400px;
+  background-color: #efefef;
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1
+{
+  padding-left: 10px;
+  font-family: Arial;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 0px;
+}
+
+.profile-paragraph1, .awards-paragraph1, .reference-paragraph1
+{
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.profile-paragraph2, .awards-paragraph2
+{
+  font-family: Arial;
+  margin-top: 5px;
+}
+
+.key-skills, .projects
+{
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+h2
+{
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.Education-paragraph1
+{
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.Education-paragraph2
+{
+  margin-top: 5px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.Education-paragraph3
+{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.reference-paragraph1
+{
+  margin-bottom: 5px;
 }
 
 @viewport
