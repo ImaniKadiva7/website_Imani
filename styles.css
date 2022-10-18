@@ -1,75 +1,91 @@
-.Header-section
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html
 {
-  background-color: rgb(124, 124, 124);
-  min-height: 50px;
-  margin-right: 3%;
-  margin-left: 3%;
-  display: flex;
-  flex-direction: row;
+    height: 88%;
 }
 
-.left-header
+body
 {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  color: white;
-  margin-left: 5px;
-  margin-right: 10px;
-  font-family: Arial;
-  font-style: italic;
-  font-size: 15px;
-  margin-left: 20px;
+    height: 88%;
 }
 
-.right-header
-{
-  display: flex;
-  flex: 2;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 10px;
-  margin-left: 10px;
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 80px;
+    background: rgb(124, 124, 124);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    margin-left: 3%;
+    margin-right: 3%;
+    top: 0;
+    left: 0;
 }
 
-.right-header a
+#navbar
 {
-  color: black;
-  text-decoration: none;
-  font-family: Arial;
-  font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.right-header a:hover
+#navbar li
 {
-  color: white;
-  transition: 0.8s;
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
 }
 
-.home-section
+#navbar li a
 {
-  padding-right: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
 }
-.about-section
+
+#navbar li a:hover,
+#navbar li a.active
 {
-  padding-right: 10px;
+    color: #fff;
 }
-.work-section
+
+#navbar li a.active::after,
+#navbar li a:hover::after
 {
-  padding-right: 10px;
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
 }
-.contact-section
+
+#mobile
 {
-  padding-right: 10px;
+    display: none;
+    align-items: center;
 }
+
+#close
+{
+    display: none;
+}
+
 .active-link a 
 {
   color: white;
 }
 .body-section
 {
-  min-height: 200px;
-  margin-top: 3%;
+  min-height: 88%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   background-color: #efefef;
   margin-left: 3%;
   margin-right: 3%;
@@ -133,7 +149,6 @@ a:hover
 {
   min-height: 50px;
   background-color: rgb(124, 124, 124);
-  margin-top: 2%;
   margin-left: 3%;
   margin-right: 3%;
   display: flex;
@@ -144,12 +159,6 @@ a:hover
 {
   display: flex;
   flex-direction: column;
-}
-
-.Top-footer
-{
-  display: flex;
-  margin: auto;
 }
 
 .bottom-footer-paragraphs-1
@@ -186,13 +195,29 @@ a:hover
 
 .about-body-section
 {
-  min-height: 400px;
+  min-height: 88%;
   background-color: #efefef;
-  margin-top: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   margin-left: 3%;
   margin-right: 3%;
   display: flex;
   flex-direction: column;
+}
+
+.link-support
+{
+    color: yellow;
+    font-family: Arial;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.link-support:hover
+{
+    color: greenyellow;
+    transition: 0.8s;
 }
 
 h1
@@ -260,10 +285,11 @@ h2
 
 .work-body-section, .contact-body-section
 {
-  height: 400px;
+  min-height: 88%;
   margin-left: 3%;
   margin-right: 3%;
-  margin-top: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   background-color: #efefef;
 }
 
@@ -283,14 +309,71 @@ h2
   font-size: 18px;
 }
 
-@viewport
+h4 
 {
-  zoom: 1.0;
-  width: extend-to-zoom;
+    padding-left: 10px;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 0px;
+    color: #fff;
 }
 
-@-ms-viewport
+@media (max-width: 799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 30vh;
+        width: 200px;
+        background-color: #efefef;
+        box-shadow: 0 40px 60px rgb(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active
+    {
+        right: 0px;
+    }
+
+    #navbar li
+    {
+        margin-bottom: 25px;
+    }
+
+    #mobile
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i
+    {
+        color: #fff;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close
+    {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 477px)
 {
-  width: extend-to-zoom;
-  zoom: 1.0;
+    #header
+    {
+        padding: 10px 30px;
+    }
 }

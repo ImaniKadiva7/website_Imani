@@ -1,77 +1,67 @@
 <!DOCTYPE html>
 
-<html>
+<html lang = "en">
 
-  <head>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Imani's website</title>
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-    <link rel = "stylesheet" href = "styles.css">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://apis.google.com">
-  </head>
+    <!--Content-Security-Policy-Report-Only: script-src 'self'; report-uri http://example.com/csr-reports-->
+</head>
 
-  <body>
+<body>
 
-    <div class = "Header-section">
+    <section id="header">
+        <h4>
+            IMANI KADIVA
+        </h4>
 
-      <div class = "left-header">
-        IMANI KADIVA
-      </div>
-      
-      <div class = "right-header">
-        
-        <div class = "home-section">
-          <a href = "index.html">Home</a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="about.html">About Me</a> </li>
+                <li><a href="work.html">Projects</a> </li>
+                <li><a class="active" href="contact.html">My Contacts</a> </li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
         </div>
 
-
-        <div class = "about-section">
-          <a href = "about.html">About</a>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
         </div>
+    </section>
 
 
-        <div class = "work-section">
-          <a href = "work.html">Work</a>
+    <div class="contact-body-section">
+        <p class="contact-paragraph1">Email: kadivaimani@yahoo.com</p>
+        <p class="contact-paragraph1">Phone: +44 7405839142</p>
+        <p class="contact-paragraph1">Linkedin link: <a href="https://www.linkedin.com/in/kadiva-imani-8578b3190/">Imani Kadiva</a></p>
+        <p class="contact-paragraph1">Website: <a href="https://imanikadiva.com/">Imani's website</a></p>
+    </div>
+
+    <div class="footer-section">
+        <div class="bottom-footer">
+            <p class="bottom-footer-paragraphs-1">
+                If you want to advice, work or support me through my website
+                you can contact me using contact details from this link.  <a class="link-support" href="contact.html">My Contacts</a>
+            </p>
+            <p class="bottom-footer-paragraphs-2">
+                Your inputs, advice, support, requests are vital and will help me to run
+                this website and create more content
+            </p>
+            <p class="bottom-footer-paragraphs-3">THANK YOU</p>
+            <p class="bottom-footer-paragraphs-3"> &copy; Imani's website</p>
         </div>
-
-        <div class = "contact-section active-link">
-          <a href = "contact.html">Contact</a>
-        </div>
-
-      </div>
 
     </div>
 
+    <script src="script.js"></script>
 
-    <div class = "contact-body-section">
-      <p class = "contact-paragraph1">Email: kadivaimani@yahoo.com</p>
-      <p class = "contact-paragraph1">Phone: +44 7405839142</p>
-      <p class = "contact-paragraph1">Linkedin link: <a href = "https://www.linkedin.com/in/kadiva-imani-8578b3190/">Imani Kadiva</a></p>
-      <p class = "contact-paragraph1">Website: <a href = "https://imanikadiva.com/">Imani's website</a></p>
-    </div>
-
-    <div class = "footer-section">
-
-
-      <div class = "Top-footer">
-        <form action="https://www.paypal.com/donate" method="post" target="_top">
-          <input type="hidden" name="hosted_button_id" value="KMW6ZEWQ6VNVS" />
-          <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-          <img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
-          </form>          
-      </div>
-
-      <div class = "bottom-footer">
-        <p class = "bottom-footer-paragraphs-1">If you want to support me through my website 
-          you can click on the donate button on the top.</p>
-        <p class = "bottom-footer-paragraphs-2">Your donations are vital and will help me to run 
-          this website and create more content</p>
-        <p class = "bottom-footer-paragraphs-3">THANK YOU</p>
-      </div>
-
-    </div>
-
-  </body>
+</body>
 
 
 </html>
