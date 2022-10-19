@@ -1,0 +1,35 @@
+<p>// Below I include all the required libraries</p>    
+<p>#include "algorithm"</p>    
+<p>#include "vector"</p>        
+<p>#include "iostream"</p>            
+<p>using namespace std;</p>
+<p>// The function "solution" below which accepts an input as an integer N</p>                
+<p>// will have the code implemented.</p>
+<p>int solution(int N) {</p>                
+<p>// Using the while statement just below to obtain the binary representation</p>                
+<p>// of int N. The binary values are then pushed back in array A.</p>               
+<p>vector int A; // Define array A;</p>                
+<p>while(N > 0)</p>                
+<p>{</p>                    
+<p>     A.push_back(N % 2); // push back the remainder of N divide by 2</p>                    
+<p>     N /= 2; // move to the next value</p>                    
+<p>}</p>                        
+<p>int zero_counter = 0;</p>                        
+<p>int max_length = 0;</p>                    
+<p>// time complexity O(n)</p>                    
+<p>for(int i = A.size() - 1; i >= 0; i--)</p>                    
+<p>{</p>                    
+<p>if(A[i] == 0)</p>                    
+<p>{</p>                    
+<p>zero_counter++;</p>                        
+<p>}</p>                       
+<p>else if(A[i] == 1)</p>                            
+<p>{</p>                        
+<p>max_length = max(max_length, zero_counter);</p>                        
+<p>zero_counter = 0;</p>                        
+<p>}</p>                            
+<p>}</p>                            
+<p>return (max_length);</p>                        
+<p>}</p>                    
+                    
+                

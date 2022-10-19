@@ -76,9 +76,81 @@ body
     display: none;
 }
 
-.active-link a 
+#project-section {
+    background-color: #efefef;
+    margin-left: 3%;
+    margin-right: 3%;
+    min-height: 88%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.first-solution-block, .second-solution-block, .third-solution-block,
+.fourth-solution-block, .fifth-solution-block, .sixth-solution-block,
+.seventh-solution-block, .eigth-solution-block 
 {
-  color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 2%;
+    margin-left: 2%;
+    flex-wrap: wrap;
+}
+
+h5 
+{
+    font-family: Arial;
+    font-size: 25px;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Binary-Gap, .Cyclic-rotation, .Frog-jump,
+.Missing-element, .Frog-River-jump, .Perm-Check,
+.Missing-Integer, .Passing-Cars, .Genomic-Range-Query,
+.Min-Avg-Two-Slice, .Max-Product-Of-Three, .triangle,
+.brackets, .fish, .Max-Profit, .Max-Slice-Sum,
+.Odd-Occurrences, .Tape-equ, .Max-Counters, .Count-Div,
+.distinct, .Number-Of-Disc-Intersection, .nesting, .Max-Double-Slice-Sum 
+{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 250px;
+}
+
+button a
+{
+    text-decoration: none;
+    color: white;
+}
+
+button a:hover
+{
+    color: yellow;
+    transition: 0.8s;
+}
+
+.active-link a {
+    color: white;
 }
 .body-section
 {
@@ -303,7 +375,7 @@ h2
   margin-bottom: 5px;
 }
 
-.work-body-section, .contact-body-section
+.contact-body-section
 {
   min-height: 88%;
   margin-left: 3%;
@@ -313,10 +385,9 @@ h2
   background-color: #efefef;
 }
 
-.contact-body-section
-{
-  display: flex;
-  flex-direction: column;
+.contact-body-section {
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-paragraph1
@@ -387,6 +458,28 @@ h4
         left: 30px;
         color: #222;
         font-size: 24px;
+    }
+
+    .Binary-Gap, .Cyclic-rotation, .Frog-jump,
+    .Missing-element, .Frog-River-jump, .Perm-Check,
+    .Missing-Integer, .Passing-Cars, .Genomic-Range-Query,
+    .Min-Avg-Two-Slice, .Max-Product-Of-Three, .triangle,
+    .brackets, .fish, .Max-Profit, .Max-Slice-Sum,
+    .Odd-Occurrences, .Tape-equ, .Max-Counters, .Count-Div,
+    .distinct, .Number-Of-Disc-Intersection, .nesting, .Max-Double-Slice-Sum 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Binary-Gap, .Cyclic-rotation, .Frog-jump,
+    .Missing-element, .Frog-River-jump, .Perm-Check,
+    .Missing-Integer, .Passing-Cars, .Genomic-Range-Query,
+    .Min-Avg-Two-Slice, .Max-Product-Of-Three, .triangle,
+    .brackets, .fish, .Max-Profit, .Max-Slice-Sum,
+    .Odd-Occurrences, .Tape-equ, .Max-Counters, .Count-Div,
+    .distinct, .Number-Of-Disc-Intersection, .nesting, .Max-Double-Slice-Sum {
+        margin-bottom: 10px;
     }
 }
 
