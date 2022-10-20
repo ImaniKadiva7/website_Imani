@@ -88,10 +88,44 @@ body
     text-align: center;
 }
 
+#code-section {
+    min-height: 88%;
+    background-color: #efefef;
+    margin-left: 3%;
+    margin-right: 3%;
+    min-height: 88%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.missing_Elementimg {
+    width: 500px;
+    transform: translate(90%);
+}
+
+.cyclic-img {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.cyclic_rot_img {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.BinaryImg
+{
+    width: 500px;
+    transform: translate(90%);
+}
+
 .first-solution-block, .second-solution-block, .third-solution-block,
 .fourth-solution-block, .fifth-solution-block, .sixth-solution-block,
-.seventh-solution-block, .eigth-solution-block 
-{
+.seventh-solution-block, .eigth-solution-block {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -410,6 +444,12 @@ h4
     color: #fff;
 }
 
+.Frog_River_One_img
+{
+    width: 300px;
+    transform: translate(180%);
+}
+
 @media (max-width: 799px) {
     #navbar {
         display: flex;
@@ -480,6 +520,19 @@ h4
     .Odd-Occurrences, .Tape-equ, .Max-Counters, .Count-Div,
     .distinct, .Number-Of-Disc-Intersection, .nesting, .Max-Double-Slice-Sum {
         margin-bottom: 10px;
+    }
+
+    .cyclic_rot_img {
+        width: 300px;
+        margin: auto;
+    }
+    .BinaryImg, .missing_Elementimg, .Frog_River_One_img 
+    {
+        width: 50%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
