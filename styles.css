@@ -152,8 +152,8 @@ h5
 .Min-Avg-Two-Slice, .Max-Product-Of-Three, .triangle,
 .brackets, .fish, .Max-Profit, .Max-Slice-Sum,
 .Odd-Occurrences, .Tape-equ, .Max-Counters, .Count-Div,
-.distinct, .Number-Of-Disc-Intersection, .nesting, .Max-Double-Slice-Sum, 
-.Stone-Wall, .Min-Max-Division {
+.distinct, .Number-Of-Disc-Intersection, .nesting, .Max-Double-Slice-Sum,
+.Stone-Wall, .Min-Max-Division, .First-Unique {
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -506,8 +506,8 @@ h4
     .Min-Avg-Two-Slice, .Max-Product-Of-Three, .triangle,
     .brackets, .fish, .Max-Profit, .Max-Slice-Sum,
     .Odd-Occurrences, .Tape-equ, .Max-Counters, .Count-Div,
-    .distinct, .Number-Of-Disc-Intersection, .nesting, 
-    .Max-Double-Slice-Sum, .Stone-Wall, .Min-Max-Division {
+    .distinct, .Number-Of-Disc-Intersection, .nesting,
+    .Max-Double-Slice-Sum, .Stone-Wall, .Min-Max-Division, .First-Unique {
         display: flex;
         flex-direction: column;
     }
@@ -519,7 +519,7 @@ h4
     .brackets, .fish, .Max-Profit, .Max-Slice-Sum,
     .Odd-Occurrences, .Tape-equ, .Max-Counters, .Count-Div,
     .distinct, .Number-Of-Disc-Intersection, .nesting,
-    .Max-Double-Slice-Sum, .Stone-Wall, .Min-Max-Division {
+    .Max-Double-Slice-Sum, .Stone-Wall, .Min-Max-Division, .First-Unique {
         margin-bottom: 10px;
     }
 
