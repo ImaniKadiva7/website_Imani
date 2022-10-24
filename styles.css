@@ -125,7 +125,7 @@ body
 
 .first-solution-block, .second-solution-block, .third-solution-block,
 .fourth-solution-block, .fifth-solution-block, .sixth-solution-block,
-.seventh-solution-block, .eigth-solution-block {
+.seventh-solution-block, .eigth-solution-block, .nineth-solution-block {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -152,8 +152,8 @@ h5
 .Min-Avg-Two-Slice, .Max-Product-Of-Three, .triangle,
 .brackets, .fish, .Max-Profit, .Max-Slice-Sum,
 .Odd-Occurrences, .Tape-equ, .Max-Counters, .Count-Div,
-.distinct, .Number-Of-Disc-Intersection, .nesting, .Max-Double-Slice-Sum 
-{
+.distinct, .Number-Of-Disc-Intersection, .nesting, .Max-Double-Slice-Sum, 
+.Stone-Wall, .Min-Max-Division {
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -506,8 +506,8 @@ h4
     .Min-Avg-Two-Slice, .Max-Product-Of-Three, .triangle,
     .brackets, .fish, .Max-Profit, .Max-Slice-Sum,
     .Odd-Occurrences, .Tape-equ, .Max-Counters, .Count-Div,
-    .distinct, .Number-Of-Disc-Intersection, .nesting, .Max-Double-Slice-Sum 
-    {
+    .distinct, .Number-Of-Disc-Intersection, .nesting, 
+    .Max-Double-Slice-Sum, .Stone-Wall, .Min-Max-Division {
         display: flex;
         flex-direction: column;
     }
@@ -518,7 +518,8 @@ h4
     .Min-Avg-Two-Slice, .Max-Product-Of-Three, .triangle,
     .brackets, .fish, .Max-Profit, .Max-Slice-Sum,
     .Odd-Occurrences, .Tape-equ, .Max-Counters, .Count-Div,
-    .distinct, .Number-Of-Disc-Intersection, .nesting, .Max-Double-Slice-Sum {
+    .distinct, .Number-Of-Disc-Intersection, .nesting,
+    .Max-Double-Slice-Sum, .Stone-Wall, .Min-Max-Division {
         margin-bottom: 10px;
     }
 
