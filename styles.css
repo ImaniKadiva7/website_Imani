@@ -125,7 +125,8 @@ body
 
 .first-solution-block, .second-solution-block, .third-solution-block,
 .fourth-solution-block, .fifth-solution-block, .sixth-solution-block,
-.seventh-solution-block, .eigth-solution-block, .nineth-solution-block {
+.seventh-solution-block, .eigth-solution-block, .nineth-solution-block,
+.tenth-solution-block {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -153,7 +154,7 @@ h5
 .brackets, .fish, .Max-Profit, .Max-Slice-Sum,
 .Odd-Occurrences, .Tape-equ, .Max-Counters, .Count-Div,
 .distinct, .Number-Of-Disc-Intersection, .nesting, .Max-Double-Slice-Sum,
-.Stone-Wall, .Min-Max-Division, .First-Unique {
+.Stone-Wall, .Min-Max-Division, .First-Unique, .Tree-Height, .Str-Symmetry-Point {
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -507,7 +508,8 @@ h4
     .brackets, .fish, .Max-Profit, .Max-Slice-Sum,
     .Odd-Occurrences, .Tape-equ, .Max-Counters, .Count-Div,
     .distinct, .Number-Of-Disc-Intersection, .nesting,
-    .Max-Double-Slice-Sum, .Stone-Wall, .Min-Max-Division, .First-Unique {
+    .Max-Double-Slice-Sum, .Stone-Wall, .Min-Max-Division, .First-Unique,
+    .Tree-Height, .Str-Symmetry-Point {
         display: flex;
         flex-direction: column;
     }
@@ -519,7 +521,8 @@ h4
     .brackets, .fish, .Max-Profit, .Max-Slice-Sum,
     .Odd-Occurrences, .Tape-equ, .Max-Counters, .Count-Div,
     .distinct, .Number-Of-Disc-Intersection, .nesting,
-    .Max-Double-Slice-Sum, .Stone-Wall, .Min-Max-Division, .First-Unique {
+    .Max-Double-Slice-Sum, .Stone-Wall, .Min-Max-Division, .First-Unique,
+    .Tree-Height, .Str-Symmetry-Point {
         margin-bottom: 10px;
     }
 
