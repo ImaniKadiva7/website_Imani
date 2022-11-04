@@ -299,7 +299,7 @@ a:hover
   margin: auto;
 }
 
-.about-body-section
+.about-body-section, .blog-body-section
 {
   min-height: 88%;
   background-color: #efefef;
