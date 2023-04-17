@@ -210,11 +210,18 @@ footer
         top: 5%;
         width: 80%;
     }
+    nav ul .links a
+    {
+        font-size: 1.3rem;
+    }
+    #mainMenu
+    {
+        display: none;
+    }
     nav button
     {
         display: block;
         cursor: pointer;
-        text-align: center;
         background: none;
         font-size: 1.5rem;
         text-decoration: none;

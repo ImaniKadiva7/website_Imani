@@ -1,7 +1,4 @@
 let navigationButton = document.getElementById("navButton");
-navigationButton.addEventListener("click", mobileMenu);
-
-window.addEventListener('resize', resetMenu);
 
 function mobileMenu()
 {
@@ -14,6 +11,7 @@ function mobileMenu()
         document.getElementById('mainMenu').style.display = 'none';
     }
 }
+navigationButton.addEventListener("click", mobileMenu);
 
 function resetMenu()
 {
@@ -26,3 +24,4 @@ function resetMenu()
         document.getElementById('mainMenu').style.display = 'none';
     }
 }
+window.addEventListener('resize', resetMenu);
