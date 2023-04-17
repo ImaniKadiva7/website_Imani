@@ -1,6 +1,6 @@
 body
 {
-    background-color: transparent;
+    background-color: rgb(243, 243, 243);/*transparent;*/
 }
 *, *:before, *:after
 {
@@ -24,7 +24,7 @@ nav ul .links
     float: right;
     display: flex;
 }
-.links li a, .header2 li h4, .header2 li h1, .links li button
+.links li a, .header2 li h4, .header2 li h1, nav button
 {
     display: block;
     text-align: center;
@@ -32,11 +32,11 @@ nav ul .links
     padding: 14px 16px;
     color: #454545;
 }
-.links li a, .header2 li h4, .links li button
+.links li a, .header2 li h4, nav button
 {
     font-size: 1rem;
 }
-.links li button
+nav button
 {
     display: none;
 }
@@ -182,7 +182,7 @@ footer
     height: 1px;
 }
 
-@media(max-width: 600px)
+@media(max-width: 900px)
 {
     .profile-main-content
     {
@@ -192,17 +192,33 @@ footer
     {
         order: 2;
     }
-    nav ul .links li a, nav ul .links li p
+    nav
     {
-        display: none;
+        display: flex;
+        justify-content: space-between;
     }
-    .links li button
+    nav ul
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul .links
+    {
+        text-align: center;
+        background: rgb(243, 243, 243);
+        position: absolute;
+        top: 5%;
+        width: 80%;
+    }
+    nav button
     {
         display: block;
         cursor: pointer;
         text-align: center;
         background: none;
         font-size: 1.5rem;
+        text-decoration: none;
+        padding: 14px 16px;
     }
     .profileImage
     {
