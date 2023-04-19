@@ -24,13 +24,26 @@ nav ul .links
     float: right;
     display: flex;
 }
-.links li a, .header2 li h4, .header2 li h1, nav button
+.links li a, .header2 li h4, nav button
 {
     display: block;
     text-align: center;
     text-decoration: none;
     padding: 14px 16px;
     color: #454545;
+}
+.header2 li a
+{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 0;
+    color: black;
+    font-weight: bold;
+}
+.links li a.active
+{
+    color: goldenrod;
 }
 .links li a, .header2 li h4, nav button
 {
@@ -44,10 +57,6 @@ nav button
 {
     color: goldenrod;
     transition: 0.7s;
-}
-.header2 li h1
-{
-    font-size: 1.2rem;
 }
 .links li p
 {
@@ -68,6 +77,40 @@ main
 .profile-main-section
 {
     padding: 3% 20%;
+}
+.resumeMainSection
+{
+    padding: 5% 20%;
+}
+.resumeContentSection
+{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.skillsContent
+{
+    margin-bottom: 0px;
+}
+.Aside
+{
+    display: flex;
+    justify-content: space-between;
+}
+.educationDescription
+{
+    margin-top: 70px;
+}
+.resumeDescription
+{
+    display: flex;
+}
+.years
+{
+    margin-right: 20px;
+}
+.years p, .explanation p, .Aside ul li p
+{
+    font-size: 1.1rem;
 }
 .profile-main-content
 {
@@ -150,6 +193,14 @@ footer
     padding: 1% 5%;
     margin: 0;
 }
+.resumeFooter
+{
+    padding-top: 1%;
+    padding-bottom: 5%;
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 .profile-contact-details
 {
     display: flex;
@@ -231,7 +282,7 @@ footer
     {
         text-align: center;
     }
-    .circleLinks
+    ul .circleLinks
     {
         text-align: center;
     }
@@ -241,7 +292,7 @@ footer
         height: auto;
         border-radius: 50%;
     }
-    .profile-main-section
+    .profile-main-section, .resumeMainSection
     {
         padding: 0% 5%;
     }
@@ -253,9 +304,33 @@ footer
     {
         flex-direction: column;
     }
-    footer
+    footer, .resumeFooter
     {
-        padding: 1% 0%;
+        padding: 4% 0%;
+    }
+    .Aside, .resumeDescription
+    {
+        flex-direction: column;
+    }
+    .resumeContentSection, .resumeDescription
+    {
+        margin-top: 20px;
+    }
+    .profileDescription, .profile-contact-details
+    {
+        padding: 0;
+    }
+    .profile-contact-details
+    {
+        margin: 0% 5%;
+    }
+    .explanation
+    {
+        margin-top: 10px;
+    }
+    .Aside ul li p br, .explanation p br
+    {
+        display: none;
     }
 }
 
