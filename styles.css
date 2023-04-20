@@ -78,9 +78,40 @@ main
 {
     padding: 3% 20%;
 }
-.resumeMainSection
+/*------------------------------------------*/
+.resumeMainSection, .projectMainSection
 {
     padding: 5% 20%;
+}
+.projectMainSection h1
+{
+    margin: 0 0 80px 0;
+}
+.projectContent
+{
+    display: flex;
+    justify-content: space-between;
+}
+.projectContent aside h1
+{
+    margin: 0 0 20px 0;
+}
+.projectContent aside p, .projectContent aside h1
+{
+    font-size: 1.2rem;
+}
+.projectContent aside ol
+{
+    padding: 0;
+}
+.content2
+{
+    margin-top: 120px;
+}
+.projectContent figure img
+{
+    width: 400px;
+    height: auto;
 }
 .resumeContentSection
 {
@@ -292,7 +323,8 @@ footer
         height: auto;
         border-radius: 50%;
     }
-    .profile-main-section, .resumeMainSection
+    .profile-main-section, .resumeMainSection,
+    .projectMainSection
     {
         padding: 0% 5%;
     }
@@ -331,6 +363,35 @@ footer
     .Aside ul li p br, .explanation p br
     {
         display: none;
+    }
+    .projectContent
+    {
+        flex-direction: column;
+    }
+    .projectContent figure img
+    {
+        width: 100%;
+        height: auto;
+    }
+    .projectMainSection h1
+    {
+        margin: 0 0 20px 0;
+    }
+    .projectContent aside
+    {
+        margin: 0 0 10px 0; 
+    }
+    .content2
+    {
+        margin-top: 50px;
+    }
+    .projectContent aside p, .projectContent aside h1
+    {
+        font-size: 1.4rem;
+    }
+    .lastProjectContent
+    {
+        margin-bottom: 40px;
     }
 }
 
