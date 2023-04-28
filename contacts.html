@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Imani's Contacts</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+               <ul>
+                    <div class="header2">
+                        <li class="name">
+                            <a href="./index.html">Imani Noah Kadiva</a>
+                        </li>
+                        <li>
+                            <h4>Engineer</h4>
+                        </li>
+                    </div>
+                    <div id="mainMenu" class="links">
+                        <li>
+                            <a href="./resume.html">Resume</a>
+                        </li>
+                        <li>
+                            <p>|</p>
+                        </li>
+                        <li>
+                            <a href="./projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <p>|</p>
+                        </li>
+                        <li>
+                            <a href="./contacts.html" class="active">Contacts</a>
+                        </li>
+                    </div>      
+               </ul>
+               <button id="navButton">☰</button>
+            </nav>
+        </header>
+        <main>
+            <section class="contactMainSection">
+                <address>
+                    <div class="addressContainer">
+                        <h1>Contact</h1>
+                        <p>
+                            Looking forward to hearing from you.
+                        </p>
+                    </div>
+                    <div class="addressContainer">
+                        <h3>Phone</h3>
+                        <a 
+                            href="tel:+447405839142">(44) 7405-839142
+                        </a>
+                    </div>
+                    <div class="addressContainer">
+                        <h3>Email</h3>
+                        <a 
+                            href="mailto:kadivaimani@yahoo.com">kadivaimani@yahoo.com
+                        </a>
+                    </div>
+                </address>
+                <aside>
+                    <form id="contact-form" action="/" method="post">
+                        <div class="firstcontentForm">
+                            <label>
+                                <span>First Name</span><br>
+                                <input type="text" tabindex="1" required autofocus>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <span>Last Name</span><br>
+                                <input type="text" tabindex="2" required autofocus>
+                            </label>
+                        </div>
+                    </form>
+                    <form id="contact-form" action="/" method="post">
+                        <div class="firstcontentForm">
+                            <label>
+                                <span>Email *</span><br>
+                                <input type="email" tabindex="3" required>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <span>Subject</span><br>
+                                <input type="text" tabindex="4" required autofocus>
+                            </label>
+                        </div>
+                    </form>
+                    <form id="contact-form" action="/" method="post">
+                        <div>
+                            <label>
+                                <span>Message</span><br>
+                                <textarea placeholder="Tell me anything" tabindex="5" cols="28" rows="8" required></textarea>
+                            </label>
+                        </div>
+                        <div>
+                            <button>
+                                <span>Submit</span>
+                            </button>
+                        </div>
+                    </form>
+                </aside>
+            </section>
+        </main>
+        <footer class="resumeFooter">
+            <div class="line"></div>
+            <ul class="profile-contact-details">
+                <li>
+                    <p>Phone</p>
+                    <a href=“tel:+44-7405-839142” target="_blank">+44-7405-839142</a>
+                </li>
+                <li>
+                    <p>Email</p>
+                    <a href="mailto:kadivaimani@yahoo.com" target="_blank">kadivaimani@yahoo.com</a>
+                </li>
+                <li>
+                    <p>Follow Me</p>
+                    <a href="https://www.linkedin.com/in/imani-kadiva/" target="_blank">linkedin</a>
+                </li>
+                <li class="copy-right">
+                    <p>&copy; 2023 by Imani Kadiva</p>
+                    <p>Powered by Imani Kadiva</p>
+                </li>
+            </ul>
+        </footer>
+        <script src="./scripts.js"></script>
+    </body>
+</html>
