@@ -12,64 +12,60 @@ header
 {
     padding: 0% 5%;
 }
-nav ul
+nav
 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-nav ul .links
-{
-    float: right;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
 }
-.links li a, .header2 li h4, nav button
+.logo a
 {
-    display: block;
-    text-align: center;
     text-decoration: none;
-    padding: 14px 16px;
-    color: #454545;
-}
-.header2 li a
-{
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    padding: 14px 0;
     color: black;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.nav-links
+{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.nav-links li
+{
+    list-style: none;
+}
+.nav-links a
+{
+    text-decoration: none;
+    letter-spacing: 1.5px;
     font-weight: bold;
+    font-size: 15px;
+    color: black;
 }
-.links li a.active
-{
-    color: goldenrod;
-}
-.links li a, .header2 li h4, nav button
-{
-    font-size: 1rem;
-}
-nav button
-{
-    display: none;
-}
-.links li a:hover, .profile-contact-details li a:hover
+.nav-links a:hover
 {
     color: goldenrod;
     transition: 0.7s;
     transform: scale(1.1);
     transition: 0.3s;
 }
-.links li p
+.nav-links a.active
 {
-    text-align: center;
-    font-size: 1rem;
-    padding: 14px 0px;
+    color: goldenrod;
 }
-.header2
+.burger
 {
-    float: left;
-    display: flex;
+    display: none;
+}
+.burger div
+{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(15, 11, 11);
+    margin: 5px;
+    transition: all 0.3s ease;
 }
 main
 {
@@ -332,8 +328,53 @@ footer
     font-weight: bold;
     font-size: 1.1rem;
 }
-@media(max-width: 900px)
+@media screen and (max-width: 1024px)
 {
+    .nav-links
+    {
+        width: 60%;
+    }
+    /*.nav-links li p
+    {
+        display: none;
+    }*/
+}
+@media screen and (max-width: 768px)
+{
+    body
+    {
+        overflow-x: hidden;
+    }
+    nav
+    {
+        justify-content: space-between;
+    }
+    .nav-links
+    {
+        position: absolute;
+        right: 0px;
+        height: 100%;
+        top: 8vh;background-color: rgb(243, 243, 243);;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: transorm 0.5s ease-in;
+    }
+    .nav-links a
+    {
+        font-size: 20px;
+    }
+    .nav-links li
+    {
+        opacity: 0;
+    }
+    .burger
+    {
+        display: block;
+        cursor: pointer;
+    }
     .profile-main-content
     {
         flex-direction: column;
@@ -342,7 +383,7 @@ footer
     {
         order: 2;
     }
-    nav
+    /*nav
     {
         display: flex;
         justify-content: space-between;
@@ -363,12 +404,12 @@ footer
     nav ul .links a
     {
         font-size: 1.3rem;
-    }
+    }*/
     #mainMenu, .desktopViewProjectParagraph
     {
         display: none;
     }
-    nav button
+    /*nav button
     {
         display: block;
         cursor: pointer;
@@ -376,7 +417,7 @@ footer
         font-size: 1.5rem;
         text-decoration: none;
         padding: 14px 16px;
-    }
+    }*/
     .profileImage
     {
         text-align: center;
@@ -484,3 +525,34 @@ footer
     }
 }
 
+.nav-active
+{
+    transform: translate(0%);
+}
+
+@keyframes navLinkFade
+{
+    from
+    {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1
+{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2
+{
+    opacity: 0;
+}
+.toggle .line3
+{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
