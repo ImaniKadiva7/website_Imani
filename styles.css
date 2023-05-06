@@ -117,6 +117,11 @@ main
     width: 400px;
     height: auto;
 }
+.projectContent figure.trafficLightsIOTProjectImg img
+{
+    width: 400px;
+    height: 350px;
+}
 .resumeContentSection
 {
     margin-top: 80px;
@@ -477,7 +482,8 @@ footer
     {
         flex-direction: column;
     }
-    .projectContent figure img
+    .projectContent figure img,
+    .projectContent figure.trafficLightsIOTProjectImg img
     {
         width: 100%;
         height: auto;
