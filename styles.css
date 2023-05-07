@@ -333,6 +333,11 @@ footer
     font-weight: bold;
     font-size: 1.1rem;
 }
+.projectContent iframe
+{
+    width: 400px;
+    height: 250px;
+}
 @media screen and (max-width: 1024px)
 {
     .nav-links
@@ -482,11 +487,15 @@ footer
     {
         flex-direction: column;
     }
-    .projectContent figure img,
-    .projectContent figure.trafficLightsIOTProjectImg img
+    .projectContent figure img
     {
         width: 100%;
         height: auto;
+    }
+    .projectContent figure.trafficLightsIOTProjectImg img
+    {
+        width: 100%;
+        height: 300px;
     }
     .projectMainSection h1
     {
@@ -528,6 +537,10 @@ footer
     #contact-form .firstcontentForm
     {
         margin-bottom: 10px;
+    }
+    .projectContent iframe
+    {
+        width: 100%;
     }
 }
 
