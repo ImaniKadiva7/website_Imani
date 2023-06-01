@@ -136,13 +136,14 @@ main
     display: flex;
     justify-content: space-between;
 }
-.educationDescription
+.educationDescription, .experienceContent
 {
-    margin-top: 70px;
+    margin-top: 50px;
 }
 .resumeDescription
 {
     display: flex;
+    flex-direction: column;
 }
 .years
 {
@@ -344,10 +345,6 @@ footer
     {
         width: 60%;
     }
-    /*.nav-links li p
-    {
-        display: none;
-    }*/
 }
 @media screen and (max-width: 768px)
 {
@@ -393,41 +390,10 @@ footer
     {
         order: 2;
     }
-    /*nav
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-    nav ul
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    nav ul .links
-    {
-        text-align: center;
-        background: rgb(243, 243, 243);
-        position: absolute;
-        top: 5%;
-        width: 100%;
-    }
-    nav ul .links a
-    {
-        font-size: 1.3rem;
-    }*/
     #mainMenu, .desktopViewProjectParagraph
     {
         display: none;
     }
-    /*nav button
-    {
-        display: block;
-        cursor: pointer;
-        background: none;
-        font-size: 1.5rem;
-        text-decoration: none;
-        padding: 14px 16px;
-    }*/
     .profileImage
     {
         text-align: center;
