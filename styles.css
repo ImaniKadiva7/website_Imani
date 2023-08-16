@@ -273,7 +273,7 @@ footer
     max-width: 100%;
     height: 1px;
 }
-.phoneViewProjectParagraph
+.phoneViewProjectParagraph, .phoneViewProjectParagraph.clear
 {
     display: none;
 }
@@ -339,6 +339,20 @@ footer
     width: 400px;
     height: 250px;
 }
+.clear
+{
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+}
+.clear
+{
+    height: 0;
+}
+.desktopViewProjectParagraph p, .desktopViewProjectParagraph a
+{
+    font-size: 1.2rem;
+}
 @media screen and (max-width: 1024px)
 {
     .nav-links
@@ -390,7 +404,7 @@ footer
     {
         order: 2;
     }
-    #mainMenu, .desktopViewProjectParagraph
+    #mainMenu /*, .desktopViewProjectParagraph*/
     {
         display: none;
     }
