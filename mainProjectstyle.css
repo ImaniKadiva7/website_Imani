@@ -1,0 +1,64 @@
+.firstMainProjectSection {
+    padding: 2% 35%;
+}
+.firstMainProjectSection h1,
+.thirdMainProjectSection h1,
+.fourthMainProjectSection h1,
+.fifthMainProjectSection h1,
+.sixthMainProjectSection h1 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+.firstMainProjectSection figure {
+    margin-top: 20px;
+}
+.firstMainProjectSection figure img {
+    width: 100%;
+    height: auto;
+}
+.firstMainProjectSection figure figcaption {
+    text-align: center;
+    font-size: 1.2rem;
+}
+.secondMainProjectSection ol, 
+.thirdMainProjectSection ol,
+.fourthMainProjectSection ol,
+.fifthMainProjectSection ol {
+    margin: 1% 19%;
+    font-size: 1.2rem;
+}
+.secondMainProjectSection p,
+.thirdMainProjectSection p,
+.fifthMainProjectSection p,
+.sixthMainProjectSection p {
+    margin: 0 20%;
+    font-size: 1.2rem;
+}
+.secondMainProjectSection video {
+    margin: 2% 35%;
+    text-align: center;
+    width: 30%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .firstMainProjectSection {
+        padding: 2% 5%;
+    }
+    .secondMainProjectSection ol, 
+    .thirdMainProjectSection ol,
+    .fourthMainProjectSection ol,
+    .fifthMainProjectSection ol {
+        margin: 1% 5%;
+    }
+    .secondMainProjectSection p,
+    .thirdMainProjectSection p,
+    .fifthMainProjectSection p,
+    .sixthMainProjectSection p {
+        margin: 0 5%;
+    }
+    .secondMainProjectSection video {
+        margin: 2% 15%;
+        width: 70%;
+    }
+}

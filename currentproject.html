@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Main Project</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./mainProjectstyle.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="./index.html">
+                        <h4>Imani Noah Kadiva</h4>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="./resume.html">Resume</a>
+                    </li>
+                    <li>
+                        <p>|</p>
+                    </li>
+                    <li>
+                        <a href="./projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <p>|</p>
+                    </li>
+                    <li>
+                        <a class = "active" href="./currentproject.html">Main Project</a>
+                    </li>
+                    <li>
+                        <p>|</p>
+                    </li>
+                    <li>
+                        <a href="./contacts.html">Contacts</a>
+                    </li>  
+               </ul>
+               <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+               </div>
+            </nav>
+        </header>
+        <main>
+            <section class = "firstMainProjectSection">
+                <h1>REAL TIME EMBEDDED SYSTEM PROTOTYPE</h1>
+                <figure>
+                    <img 
+                        src="./images/Real_time_operating_system_prototype.jpeg" 
+                        alt="real time operating system"
+                    >
+                    <figcaption>
+                        Real time Embedded Sytem Prototype
+                    </figcaption>
+                </figure>
+            </section>
+            <section class="secondMainProjectSection">
+                <p>
+                    <b> Introducing my Real-Time Embedded System Prototype.</b> Unlock
+                    unparalleled efficiency and precision as tasks harmoniously unfold
+                    concurrently, ensuring optimal resource utilization and responsiveness.
+                    This project showcases the power of real-time multitasking, useful
+                    in industries like automotive, manufucturing, health care and beyond.   
+                </p>
+                <p>
+                    See the video of the working system below.
+                </p>
+                <video controls>
+                    <source src="./media/WhatsApp Video 2023-08-31 at 15.54.53.mp4" type="video/mp4"/>
+                </video>
+                <p>
+                    This project demonstrates my skills and experience in writing code that can do the following:
+                </p>
+                <ol>
+                    <li>
+                        Control and run multiple processes concurrently on a single microcontroller in a non-blocking 
+                        fashion.
+                    </li>
+                    <li>
+                        Controlling digital pins of ATMEGA328p microcontroller in a Bare metal fashion.
+                    </li>
+                    <li>
+                        I2C interfacing between two modules. i.e Microcontroller and MPU_6050 integrated circuit
+                    </li>
+                    <li>
+                        Driving and interrogating I2C device.
+                    </li>
+                    <li>
+                        How to deal with situations where there are insufficient port-pins.
+                    </li>
+                    <li>
+                        Driving I/O lines in sequence according to their timing diagrams.
+                    </li>
+                    <li>
+                        Dealing with noise from the Pushbutton by registering correct button press after 300ms.
+                    </li>
+                </ol>
+            </section>
+            <section class="thirdMainProjectSection">
+                <h1>HOW THE SYSTEM WORKS</h1>
+                <P>
+                    The system has got 3 modes all running concurrently in a non-blocking fashion.
+                    The first mode in the list below works initially when the system is powered. 
+                    The push button on the left side of the video is used to change to other modes of the system
+                    and the push button on the right side in the video is used to display numbers and letters on 
+                    the 7 segment display.
+                </P>
+                <br>
+                <p>
+                    Consider the following modes of the system.
+                </p>
+                <ol>
+                    <li>
+                        Traffic lights Contoller module is on and the 7 segment displays letter "t".
+                    </li>
+                    <li>
+                        Traffic lights controller module is on and the counter module (using shift register, 
+                        pushbutton and 7 segment) is on.
+                    </li>
+                    <li>
+                        Traffic lights controller module is on and the Orientation indicator module based on an 
+                        accelerometer is on.
+                    </li>
+                </ol>
+                <p>
+                    When the system is powered, the traffic lights controller module works straight away and the 
+                    7 segment displays t. When the left side push button registers a button normal press, the 
+                    second mode starts working. The push button module is smapled every 17ms in the code.
+                </p>
+                <br>
+                <p>
+                    In the second mode the traffic lights controller will still be working. In this mode, the
+                    counter module and the right push button module will start working as well. when the 
+                    right side pushbutton is pressed after 300ms the counter variable is increased and a different 
+                    number or letter is displayed on the 7 segment display. 
+                </p>
+                <br>
+                <p>
+                    In the third mode, the counter module stops working, the traffic lights controller module is
+                    still working and the orientation indicator module is now switched on. The orientation 
+                    indicator module displays letter "F" on the 7 Segment display indicating that the system is "FLAT",
+                    and displays letter "L" on the 7 segment indicating that the system is on "LANDSCAPE". 
+                </p>
+            </section>
+            <section class="fourthMainProjectSection">
+                <h1>SYSTEM HARDWARE USED</h1>
+                <ol>
+                    <li>
+                        ATMEGA328P Microcontroller.
+                    </li>
+                    <li>
+                        6 LED's and Resistors.
+                    </li>
+                    <li>
+                        2 Push Buttons
+                    </li>
+                    <li>
+                        MPU_6050 Integrated Circuit.
+                    </li>
+                    <li>
+                        Shift register
+                    </li>
+                    <li>
+                        7 Segment Display.
+                    </li>
+                    <li>
+                        Jumper cable wires.
+                    </li>
+                </ol>
+            </section>
+            <section class="fifthMainProjectSection">
+                <h1>REAL WORLD APPLICATIONS</h1>
+                <p>
+                    The skills gained in this project can be applicable in developing 
+                    systems in the following industries:
+                </p>
+                <ol>
+                    <li>
+                        Automotive systems. Modern automobiles are equipped with 
+                        numerous embedded systems that need to operate concurrently
+                        in a non-blocking fashion.
+                    </li>
+                    <li>
+                        Industrial Automation. Some manufucturing facilities use embedded 
+                        systems to control complex processes. Skills gained in this project,
+                        can help to develop code that can manage tasks like machine control
+                        and communication in a non-blocking fashion.
+                    </li>
+                    <li>
+                        Robotics. Robots with multiple actuators and sensors need to perform 
+                        tasks concurrently such as path planning, motion control with the 
+                        environment. Skills gained while doing this project, can be used to 
+                        develope code that can run robot tasks in a non-blocking fashion.   
+                    </li>
+                </ol>
+            </section>
+            <section class="sixthMainProjectSection">
+                <h1>INTRESTED TO SEE THE PROJECT CODE/ CODE DESIGN</h1>
+                <p>
+                    To see the project code/ code design you can reach out to me via my contacts page.
+                </p>
+            </section>
+            <footer class="resumeFooter">
+                <div class="line"></div>
+                <ul class="profile-contact-details">
+                    <li>
+                        <p>Phone</p>
+                        <a href=“tel:+44-7405-839142” target="_blank">+44-7405-839142</a>
+                    </li>
+                    <li>
+                        <p>Email</p>
+                        <a href="mailto:kadivaimani@yahoo.com" target="_blank">kadivaimani@yahoo.com</a>
+                    </li>
+                    <li>
+                        <p>Follow Me</p>
+                        <a href="https://www.linkedin.com/in/imani-kadiva/" target="_blank">linkedin</a>
+                    </li>
+                    <li class="copy-right">
+                        <p>&copy; 2023 by Imani Kadiva</p>
+                        <p>Powered by Imani Kadiva</p>
+                    </li>
+                </ul>
+            </footer>
+        </main>
+        <script src="./scripts.js"></script>
+    </body>
+</html>
