@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+    max-width: 50%;
+}
 .firstMainProjectSection {
     padding: 2% 35%;
 }
