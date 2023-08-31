@@ -372,7 +372,7 @@ footer
     }
     .nav-links
     {
-        position: absolute;
+        /*position: absolute;*/
         right: 0px;
         height: 100%;
         top: 8vh;background-color: rgb(243, 243, 243);;
