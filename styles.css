@@ -1,6 +1,6 @@
 html, body {
-    overflow-x: hidden;
-    max-width: 100%;
+    overflow-x: hidden !important;
+    width: 100vw !important;
 }
 body
 {
@@ -366,10 +366,6 @@ footer
 }
 @media screen and (max-width: 768px)
 {
-    html, body {
-        overflow-x: hidden;
-        max-width: 100%;
-    }
     nav
     {
         justify-content: space-between;
