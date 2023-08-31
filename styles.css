@@ -522,6 +522,9 @@ footer
     {
         width: 100%;
     }
+    footer {
+        margin-bottom: 0;
+    }
 }
 
 .nav-active
