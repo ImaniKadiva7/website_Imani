@@ -22,6 +22,7 @@
 .courseContent figure img {
     width: 380px;
     height: auto;
+    margin-bottom: 0px;
 }
 .courseDescription button {
     border: 1px solid black;
@@ -51,7 +52,7 @@
         height: 250px;
     }
     .courseDescription {
-        padding: 1% 4%;
+        padding: 3% 4%;
         text-align: center;
     }
     .courseDescription button {
