@@ -42,13 +42,20 @@
     .courseContent {
         flex-direction: column;
     }
+    .courseContent figure {
+        margin-right: 0px;
+    }
     .courseContent figure img {
-        width: 205px;
+        width: 100%;
     }
     .courseDescription {
         padding: 3% 4%;
+        text-align: center;
     }
     .courseDescription button {
         padding: 5% 5%;
+    }
+    .courseContentContainer {
+        padding: 5% 15%;
     }
 }
