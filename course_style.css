@@ -17,6 +17,7 @@
 }
 .courseContent figure {
     margin-right: 20px;
+    margin-bottom: 0px;
 }
 .courseContent figure img {
     width: 380px;
