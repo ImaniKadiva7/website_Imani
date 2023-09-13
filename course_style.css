@@ -47,6 +47,7 @@
     }
     .courseContent figure img {
         width: 100%;
+        height: 250px;
     }
     .courseDescription {
         padding: 3% 4%;
