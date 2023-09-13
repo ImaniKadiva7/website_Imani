@@ -1,7 +1,3 @@
-html, body {
-    overflow-x: hidden !important;
-    width: 100vw !important;
-}
 .firstMainProjectSection {
     padding: 2% 35%;
 }
@@ -46,10 +42,6 @@ html, body {
 }
 
 @media screen and (max-width: 768px) {
-    html, body {
-        overflow-x: hidden;
-        max-width: 100%;
-    }
     .firstMainProjectSection {
         padding: 2% 5%;
     }

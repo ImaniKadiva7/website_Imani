@@ -29,8 +29,8 @@ nav
 .nav-links
 {
     display: flex;
-    justify-content: space-around;
-    width: 30%;
+    justify-content: space-between;
+    width: 40%;
 }
 .nav-links li
 {
@@ -370,7 +370,6 @@ footer
     {
         justify-content: space-between;
         overflow: hidden;
-        /*position: relative;*/
     }
     .nav-links
     {
