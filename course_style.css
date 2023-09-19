@@ -8,7 +8,7 @@
     font-size: 1.8rem;
 }
 .courseContentContainer {
-    padding: 5% 25%;
+    padding: 4% 25%;
 }
 .courseContent {
     display: flex;
@@ -17,10 +17,12 @@
 }
 .courseContent figure {
     margin-right: 20px;
+    margin-bottom: 0px;
+    display: flex;
 }
 .courseContent figure img {
     width: 380px;
-    height: 300px;
+    height: auto;
 }
 .courseDescription button {
     border: 1px solid black;
@@ -29,6 +31,7 @@
     font-size: 1rem;
     cursor: pointer;
     margin-top: 20px;
+    margin-bottom: 5px;
 }
 .courseDescription p, .courseDescription h3 {
     margin-top: 10px;
@@ -49,10 +52,11 @@
     .mobileCourseContent {
         display: block;
         border: 1px solid black;
+        margin: 5px 0;
     }
     .mobileCourseContent figure img {
         width: 100%;
-        height: auto;
+        height: 300px;
     }
     .courseContentContainer {
         padding: 5% 10%;
