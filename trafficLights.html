@@ -109,6 +109,7 @@
         <script src="./scripts.js"></script>
         <script>
             const burger = document.querySelector('.burger');
+            document.getElementById("videoTag").style.zIndex = "1";
             burger.addEventListener('click',()=>{
                 if(document.getElementById("videoTag").style.zIndex == "-1") {
                     document.getElementById("videoTag").style.zIndex = "1";
