@@ -15,6 +15,8 @@
     color: rgb(253, 204, 0);
     background: rgb(11, 41, 59);
     font-size: 1.1rem;
+    margin-top: 0px;
+    height: 400px;
 }
 .blinkingLED_second_section {
     margin-top: 10px;
