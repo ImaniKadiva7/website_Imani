@@ -110,7 +110,12 @@
         <script>
             const burger = document.querySelector('.burger');
             burger.addEventListener('click',()=>{
-                document.getElementById("videoTag").style.zIndex = "-1";
+                if(document.getElementById("videoTag").style.zIndex == "-1") {
+                    document.getElementById("videoTag").style.zIndex = "1";
+                }
+                else {
+                    document.getElementById("videoTag").style.zIndex = "-1";
+                }
             });
         </script>
     </body>
