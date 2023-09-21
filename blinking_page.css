@@ -55,6 +55,7 @@
     .blinkingLED_first_section video {
         height: 250px;
         position: relative;
+        z-index: -1;
     }
     .blinkingLED_second_section {
         padding: 2% 5%;
