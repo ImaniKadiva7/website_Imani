@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Traffic Lights Project</title>
+        <title>7 Segment LED Display Project</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="./blinking_page.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
@@ -58,24 +58,44 @@
             <section class="blinkingLED_first_section">
                 <div>
                     <p>
-                        How to design and develop a traffic 
-                        Lights Controller using STM32 
-                        development board in a non-blocking 
-                        fashion using Bare Metal Approach.
+                        How to design and develop a 7-Segment display 
+                        project and debouncing a switch in a non blocking 
+                        fashion using bare metal approach and stm32 mcu.
                     </p>
                 </div>
-                <video id="videoTag" controls poster="./images/trafficLightsImage.jpeg">
-                    <source src="./media/trafficLightsControllerSTM32.mp4" type="video/mp4"/>
+                <video id="videoTag" controls poster="./images/7_segment_LED_display_project_image.jpeg">
+                    <source src="./media/7_segment_LED_display_project_video.mp4" type="video/mp4"/>
                 </video>
             </section>
             <section class="blinkingLED_second_section">
                 <h1>About this Program</h1>
                 <p>
-                    Through this simple course you will
-                    learn basic concepts of electronics and programming in C,
-                    Prototyping, Debugging skills, Basic for more complex projects,
-                    Hardware Interactions.
+                    Without using HAL library, through this simple course you will
+                    learn the following:
                 </p>
+                <ul>
+                    <li>
+                        <p>
+                            Interface a 7-segment LED display with shift register and stm32 mcu 
+                            using Bare Metal approach.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Debouncing a switch in a non blocking fashion.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Dealing with situation where there are insufficient ports
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Driving LATCH, DATA and CLOCK lines to write data to shift register.
+                        </p>
+                    </li>
+                </ul>
             </section>
             <hr>
             <section class="blinkingLED_second_section">

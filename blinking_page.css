@@ -23,8 +23,13 @@
     padding: 2% 25%;
     text-align: center;
 }
+.blinkingLED_second_section ul {
+    text-align: start;
+    padding: 0% 2%;
+}
 .blinkingLED_second_section p {
     font-size: 1.2rem;
+    text-align: start;
 }
 .blinkingLED_second_section button {
     border: 1px solid black;
@@ -55,7 +60,6 @@
     .blinkingLED_first_section video {
         height: 250px;
         position: relative;
-        z-index: -1;
     }
     .blinkingLED_second_section {
         padding: 2% 5%;
