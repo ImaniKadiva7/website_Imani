@@ -2,7 +2,8 @@
     display: flex;
     margin-top: 20px;
 }
-.blinkingLED_first_section video {
+.blinkingLED_first_section video,
+.blinkingLED_first_section iframe {
     height: 400px;
     width: 50%;
     border: 1px solid black;
@@ -48,7 +49,8 @@
         flex-direction: column;
     }
     .blinkingLED_first_section div,
-    .blinkingLED_first_section video {
+    .blinkingLED_first_section video,
+    .blinkingLED_first_section iframe {
         width: 100%;
     }
     .blinkingLED_first_section div {
@@ -57,7 +59,8 @@
         text-align: center;
         padding: 20% 15%;
     }
-    .blinkingLED_first_section video {
+    .blinkingLED_first_section video,
+    .blinkingLED_first_section iframe {
         height: 250px;
         position: relative;
     }
