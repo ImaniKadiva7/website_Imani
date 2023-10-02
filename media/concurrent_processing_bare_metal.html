@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Concurrent Processing Bare-Metal Approach Project Page</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./blinking_page.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="./index.html">
+                        <h4>Imani Noah Kadiva</h4>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="./resume.html">Resume</a>
+                    </li>
+                    <li>
+                        <p>|</p>
+                    </li>
+                    <li>
+                        <a href="./projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <p>|</p>
+                    </li>
+                    <li>
+                        <a href="./currentproject.html">Prototype</a>
+                    </li>
+                    <li>
+                        <p>|</p>
+                    </li>
+                    <li>
+                        <a href="./course.html">Programs</a>
+                    </li>
+                    <li>
+                        <p>|</p>
+                    </li>
+                    <li>
+                        <a href="./contacts.html">Contacts</a>
+                    </li>  
+               </ul>
+               <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+               </div>
+            </nav>
+        </header>
+        <main>
+            <section class="blinkingLED_first_section">
+                <div>
+                    <p>
+                        In this course, you will learn how to develop Concurrent and 
+                        Bare Metal embedded system prototype using the STM32 micro-controller. 
+                        As a beginner developer, this project will equip you with essential 
+                        knowledge and hands-on experience.
+                    </p>
+                </div>
+                <iframe
+                    src="https://www.youtube.com/embed/sPUVB2Gqyp8?playlist=uxWuCz0OGfI&t&loop=1">
+                </iframe>
+            </section>
+            <section class="blinkingLED_second_section">
+                <h1>About this Program</h1>
+                <br>
+                <p>
+                    In this course you will dive deep into the following:
+                </p>
+                <ul>
+                    <li>
+                        <p>
+                            Controlling and running multiple processes on a Single Micro-controller
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Writing Concurrent, Non-Blocking Code Modules
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Controlling Digital Pins of the STM32 Micro-controller 
+                            in a Bare-Metal Fashion.
+                        </p>
+                    </li>
+                </ul>
+                <br>
+                <h1>Real World Application</h1>
+                <br>
+                <p>
+                    A real-world application for developing code in C that involves concurrent 
+                    processing on an STM32 microcontroller in a non-blocking fashion, without 
+                    using an RTOS, is like building a wireless remote control for a robot or a 
+                    drone. In such a project, you would have multiple code modules running concurrently 
+                    to manage various aspects of the system.
+                </p>
+                <br>
+                <p>
+                    In this real-world application, you have multiple code modules running concurrently, 
+                    allowing the robot or drone to perform tasks like sensing its environment, making 
+                    decisions, and responding to user input—all while maintaining a non-blocking, cooperative 
+                    multitasking approach, and without the use of an RTOS.
+                </p>
+            </section>
+            <hr>
+            <section class="blinkingLED_second_section">
+                <h1>Click the button below to Request for a Session</h1>
+                <button type="button">
+                    Request for a Session
+                </button>
+            </section>
+        </main>
+        <footer>
+            <div class="line"></div>
+            <ul class="profile-contact-details">
+                <li>
+                    <p>Phone</p>
+                    <a href=“tel:+44-7405-839142” target="_blank">+44-7405-839142</a>
+                </li>
+                <li>
+                    <p>Email</p>
+                    <a href="mailto:kadivaimani@yahoo.com" target="_blank">kadivaimani@yahoo.com</a>
+                </li>
+                <li>
+                    <p>Follow Me</p>
+                    <a href="https://www.linkedin.com/in/imani-kadiva/" target="_blank">linkedin</a>
+                </li>
+                <li class="copy-right">
+                    <p>&copy; 2023 by Imani Kadiva</p>
+                    <p>Powered by Imani Kadiva</p>
+                </li>
+            </ul>
+        </footer>
+        <script src="./scripts.js"></script>
+        <script>
+            const burger = document.querySelector('.burger');
+            document.getElementById("videoTag").style.zIndex = "1";
+            burger.addEventListener('click',()=>{
+                if(document.getElementById("videoTag").style.zIndex == "-1") {
+                    document.getElementById("videoTag").style.zIndex = "1";
+                }
+                else {
+                    document.getElementById("videoTag").style.zIndex = "-1";
+                }
+            });
+        </script>
+    </body>
+</html>

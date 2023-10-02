@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blinking LED Page</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./blinking_page.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="./index.html">
+                        <h4>Imani Noah Kadiva</h4>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="./resume.html">Resume</a>
+                    </li>
+                    <li>
+                        <p>|</p>
+                    </li>
+                    <li>
+                        <a href="./projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <p>|</p>
+                    </li>
+                    <li>
+                        <a href="./currentproject.html">Prototype</a>
+                    </li>
+                    <li>
+                        <p>|</p>
+                    </li>
+                    <li>
+                        <a href="./course.html">Programs</a>
+                    </li>
+                    <li>
+                        <p>|</p>
+                    </li>
+                    <li>
+                        <a href="./contacts.html">Contacts</a>
+                    </li>  
+               </ul>
+               <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+               </div>
+            </nav>
+        </header>
+        <main>
+            <section class="blinkingLED_first_section">
+                <div>
+                    <p>
+                        Writing Firmware to communicate STM32 ARM processor and MPU_6050 
+                        accelerometer using Wire Library and Bare Metal Approach. 
+                    </p>
+                </div>
+                <video id="videoTag" controls poster="./images/Accelerometer_Interfacing_project_image.jpeg">
+                    <source src="./media/Accelerometer_interfacing_project_video_stm32.mp4" type="video/mp4"/>
+                </video>
+            </section>
+            <section class="blinkingLED_second_section">
+                <h1>About this Program</h1>
+                <p>
+                    Through this simple course you will
+                    learn basics of I2C interfacing using wire 
+                    library on the STM32 platform, writing firmware driving 
+                    and interrogating I2C device i.e accelerometer and 
+                    interpreting data from the accelerometer.
+                </p>
+                <br>
+                <p>
+                    The system developed in this program is related to a 
+                    typical smartphone scenario. When the phone screen is 
+                    rotated such that they appear in landscape form with 
+                    correct orientation, similarly to potrait form, the contents 
+                    appear in potrait form.
+                </p>
+                <br>
+                <p>
+                    In this project we use the small breadboard to which 
+                    the accelerometer is placed. When the breadboard is 
+                    rotated to landscape orientation, letter <strong>L</strong> is displayed
+                    on the 7 segment, letter <strong>F</strong> is displayed when breadboard 
+                    is flat and letter <strong>U</strong> is displayed when breadboard rotated 
+                    upside down.
+                </p>
+            </section>
+            <hr>
+            <section class="blinkingLED_second_section">
+                <h1>Click the button below to Request for a Session</h1>
+                <button type="button">
+                    Request for a Session
+                </button>
+            </section>
+        </main>
+        <footer>
+            <div class="line"></div>
+            <ul class="profile-contact-details">
+                <li>
+                    <p>Phone</p>
+                    <a href=“tel:+44-7405-839142” target="_blank">+44-7405-839142</a>
+                </li>
+                <li>
+                    <p>Email</p>
+                    <a href="mailto:kadivaimani@yahoo.com" target="_blank">kadivaimani@yahoo.com</a>
+                </li>
+                <li>
+                    <p>Follow Me</p>
+                    <a href="https://www.linkedin.com/in/imani-kadiva/" target="_blank">linkedin</a>
+                </li>
+                <li class="copy-right">
+                    <p>&copy; 2023 by Imani Kadiva</p>
+                    <p>Powered by Imani Kadiva</p>
+                </li>
+            </ul>
+        </footer>
+        <script src="./scripts.js"></script>
+        <script>
+            const burger = document.querySelector('.burger');
+            document.getElementById("videoTag").style.zIndex = "1";
+            burger.addEventListener('click',()=>{
+                if(document.getElementById("videoTag").style.zIndex == "-1") {
+                    document.getElementById("videoTag").style.zIndex = "1";
+                }
+                else {
+                    document.getElementById("videoTag").style.zIndex = "-1";
+                }
+            });
+        </script>
+    </body>
+</html>
