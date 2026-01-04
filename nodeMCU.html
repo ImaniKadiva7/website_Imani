@@ -1,134 +1,63 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NodeMCU Project Page</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="./blinking_page.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div class="logo">
-                    <a href="./index.html">
-                        <h4>Imani Noah Kadiva</h4>
-                    </a>
-                </div>
-                <ul class="nav-links">
-                    <li>
-                        <a href="./resume.html">Resume</a>
-                    </li>
-                    <li>
-                        <p>|</p>
-                    </li>
-                    <li>
-                        <a href="./projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <p>|</p>
-                    </li>
-                    <li>
-                        <a href="./currentproject.html">Prototype</a>
-                    </li>
-                    <li>
-                        <p>|</p>
-                    </li>
-                    <li>
-                        <a href="./course.html">Programs</a>
-                    </li>
-                    <li>
-                        <p>|</p>
-                    </li>
-                    <li>
-                        <a href="./contacts.html">Contacts</a>
-                    </li>  
-               </ul>
-               <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-               </div>
-            </nav>
-        </header>
-        <main>
-            <section class="blinkingLED_first_section">
-                <div>
-                    <p>
-                        Writing Firmware to make NodeMCU as HTTP Server using Wi-Fi Access Point Mode.  
-                    </p>
-                </div>
-                <video id="videoTag" controls poster="./images/NodeMCU_As_HTTP_Server_Using_Wi-Fi_AP_Mode_Course_image.jpeg">
-                    <source src="./media/NodeMCU_as_HTTP_Server_using_WiFi_AP_Mode_Course_Video.mp4" type="video/mp4"/>
-                </video>
-            </section>
-            <section class="blinkingLED_second_section">
-                <h1>About this Program</h1>
-                <br>
-                <p>
-                    Through this simple course you will learn how to use NodeMCU to 
-                    create a network where other wi-fi enabled devices can 
-                    connect and eventually control sensors or other devices 
-                    over the internet.
-                </p>
-                <br>
-                <p>
-                    By setting up a NodeMCU as an HTTP server in AP mode, you gain 
-                    the ability to create custom, web-based interfaces for various 
-                    applications, making it a versatile tool for IoT development 
-                    and home automation.
-                </p>
-                <br>
-                <p>
-                    The skills gained in this course can also used to develop various 
-                    applications like Home Automation Hub, Remote Control for IOT Devices 
-                    Sensor Data Monitoring, Industrial IOT, Home Security System, Education
-                    and prototyping.
-                </p>
-            </section>
-            <section class="blinkingLED_second_section">
-                <h1>Click the button below to Request for a Session</h1>
-                <button type="button">
-                    Request for a Session
-                </button>
-            </section>
-        </main>
-        <footer>
-            <div class="line"></div>
-            <ul class="profile-contact-details">
-                <li>
-                    <p>Phone</p>
-                    <a href=“tel:+44-7405-839142” target="_blank">+44-7405-839142</a>
-                </li>
-                <li>
-                    <p>Email</p>
-                    <a href="mailto:kadivaimani@yahoo.com" target="_blank">kadivaimani@yahoo.com</a>
-                </li>
-                <li>
-                    <p>Follow Me</p>
-                    <a href="https://www.linkedin.com/in/imani-kadiva/" target="_blank">linkedin</a>
-                </li>
-                <li class="copy-right">
-                    <p>&copy; 2023 by Imani Kadiva</p>
-                    <p>Powered by Imani Kadiva</p>
-                </li>
-            </ul>
-        </footer>
-        <script src="./scripts.js"></script>
-        <script>
-            const burger = document.querySelector('.burger');
-            document.getElementById("videoTag").style.zIndex = "1";
-            burger.addEventListener('click',()=>{
-                if(document.getElementById("videoTag").style.zIndex == "-1") {
-                    document.getElementById("videoTag").style.zIndex = "1";
-                }
-                else {
-                    document.getElementById("videoTag").style.zIndex = "-1";
-                }
-            });
-        </script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeMCU HTTP Server | Imani Kadiva</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blinking_page.css">
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <a href="index.html">Imani Noah Kadiva</a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="projects.html">Projects</a></li>
+            <li>|</li>
+            <li><a href="course.html">Programs</a></li>
+            <li>|</li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+
+        <div class="burger">
+            <div></div><div></div><div></div>
+        </div>
+    </nav>
+</header>
+
+<main>
+<section class="blinkingLED_first_section">
+    <p>NodeMCU configured as an HTTP server using Wi-Fi Access Point mode.</p>
+
+    <video controls poster="./images/NodeMCU_As_HTTP_Server_Using_Wi-Fi_AP_Mode_Course_image.jpeg">
+        <source src="./media/NodeMCU_as_HTTP_Server_using_WiFi_AP_Mode_Course_Video.mp4" type="video/mp4">
+    </video>
+</section>
+
+<section class="blinkingLED_second_section">
+    <h1>About This Program</h1>
+    <p>
+        Learn how to build embedded web servers for IoT applications,
+        enabling device control via browser-based interfaces.
+    </p>
+</section>
+
+<section class="blinkingLED_second_section">
+    <h1>Request a Session</h1>
+    <a href="contacts.html" class="cta-button">Request Session</a>
+</section>
+</main>
+
+<footer>
+    <div class="line"></div>
+    <p>&copy; 2023 Imani Kadiva</p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
 </html>
