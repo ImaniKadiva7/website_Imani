@@ -1,132 +1,108 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>I2C Basics Project Page</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="./blinking_page.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div class="logo">
-                    <a href="./index.html">
-                        <h4>Imani Noah Kadiva</h4>
-                    </a>
-                </div>
-                <ul class="nav-links">
-                    <li>
-                        <a href="./resume.html">Resume</a>
-                    </li>
-                    <li>
-                        <p>|</p>
-                    </li>
-                    <li>
-                        <a href="./projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <p>|</p>
-                    </li>
-                    <li>
-                        <a href="./currentproject.html">Prototype</a>
-                    </li>
-                    <li>
-                        <p>|</p>
-                    </li>
-                    <li>
-                        <a href="./course.html">Programs</a>
-                    </li>
-                    <li>
-                        <p>|</p>
-                    </li>
-                    <li>
-                        <a href="./contacts.html">Contacts</a>
-                    </li>  
-               </ul>
-               <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-               </div>
-            </nav>
-        </header>
-        <main>
-            <section class="blinkingLED_first_section">
-                <div>
-                    <p>
-                        Writing Firmware to enable I2C Communication between STM32 and nodeMCU Project.
-                    </p>
-                </div>
-                <video id="videoTag" controls poster="./images/I2C_communication_protocol_project_image.jpeg">
-                    <source src="./media/I2C_communication_protocol_project_video.mp4" type="video/mp4"/>
-                </video>
-            </section>
-            <section class="blinkingLED_second_section">
-                <h1>About this Program</h1>
-                <br>
-                <p>
-                    Through this simple course you will learn how the nodeMCU initiates 
-                    Communication with the STM32. The nodeMCU requires the address 
-                    of the STM32 to initiate conversation with the STM32. The STM32 
-                    responds to the nodeMCU with an acknowledgement when addressed by 
-                    the nodeMCU.
-                </p>
-                <br>
-                <p>
-                    You will gain Embedded Programming skills, C programming, I2C protocol 
-                    and Hardware Interaction
-                </p>
-                <br>
-                <p>
-                    I2C communication protocol is applicable in IOT Devices, Robotics, Consumer 
-                    Electronics, Automotive Systems, Medical Devices, Industrial Automation, 
-                    Home automation and more.
-                </p>
-            </section>
-            <section class="blinkingLED_second_section">
-                <h1>Click the button below to Request for a Session</h1>
-                <button type="button">
-                    Request for a Session
-                </button>
-            </section>
-        </main>
-        <footer>
-            <div class="line"></div>
-            <ul class="profile-contact-details">
-                <li>
-                    <p>Phone</p>
-                    <a href=“tel:+44-7405-839142” target="_blank">+44-7405-839142</a>
-                </li>
-                <li>
-                    <p>Email</p>
-                    <a href="mailto:kadivaimani@yahoo.com" target="_blank">kadivaimani@yahoo.com</a>
-                </li>
-                <li>
-                    <p>Follow Me</p>
-                    <a href="https://www.linkedin.com/in/imani-kadiva/" target="_blank">linkedin</a>
-                </li>
-                <li class="copy-right">
-                    <p>&copy; 2023 by Imani Kadiva</p>
-                    <p>Powered by Imani Kadiva</p>
-                </li>
-            </ul>
-        </footer>
-        <script src="./scripts.js"></script>
-        <script>
-            const burger = document.querySelector('.burger');
-            document.getElementById("videoTag").style.zIndex = "1";
-            burger.addEventListener('click',()=>{
-                if(document.getElementById("videoTag").style.zIndex == "-1") {
-                    document.getElementById("videoTag").style.zIndex = "1";
-                }
-                else {
-                    document.getElementById("videoTag").style.zIndex = "-1";
-                }
-            });
-        </script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I2C Communication Basics | Imani Kadiva</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blinking_page.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <a href="index.html">Imani Noah Kadiva</a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="resume.html">Resume</a></li>
+            <li>|</li>
+            <li><a href="projects.html">Projects</a></li>
+            <li>|</li>
+            <li><a href="currentproject.html">Prototype</a></li>
+            <li>|</li>
+            <li><a href="course.html">Programs</a></li>
+            <li>|</li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+
+        <div class="burger">
+            <div></div><div></div><div></div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Intro Section -->
+    <section class="blinkingLED_first_section">
+        <div class="intro-box">
+            <p>
+                Writing firmware to enable I2C communication between
+                STM32 and NodeMCU using a bare-metal approach.
+            </p>
+        </div>
+
+        <video controls poster="./images/I2C_communication_protocol_project_image.jpeg">
+            <source src="./media/I2C_communication_protocol_project_video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- About -->
+    <section class="blinkingLED_second_section">
+        <h1>About This Program</h1>
+
+        <p>
+            This course introduces how NodeMCU initiates I2C communication
+            with an STM32 microcontroller. You will learn how addressing,
+            acknowledgements, and data transfer work at protocol level.
+        </p>
+
+        <p>
+            Skills gained include Embedded C programming, I2C protocol
+            implementation, and hardware-level communication.
+        </p>
+
+        <p>
+            I2C is widely used in IoT devices, robotics, automotive systems,
+            medical devices, and industrial automation.
+        </p>
+    </section>
+
+    <!-- CTA -->
+    <section class="blinkingLED_second_section">
+        <h1>Request a Session</h1>
+        <button type="button">
+            Request for a Session
+        </button>
+    </section>
+</main>
+
+<footer>
+    <div class="line"></div>
+
+    <ul class="profile-contact-details">
+        <li>
+            <p>Phone</p>
+            <a href="tel:+447405839142">+44 7405 839142</a>
+        </li>
+        <li>
+            <p>Email</p>
+            <a href="mailto:kadivaimani@yahoo.com">kadivaimani@yahoo.com</a>
+        </li>
+        <li>
+            <p>Follow Me</p>
+            <a href="https://www.linkedin.com/in/imani-kadiva/" target="_blank">LinkedIn</a>
+        </li>
+        <li class="copy-right">
+            <p>&copy; 2023 Imani Kadiva</p>
+            <p>Powered by Imani Kadiva</p>
+        </li>
+    </ul>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
 </html>
